@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.scss',
 })
 export class Sidebar {
+  collapsed = false;
 
+  toggle() {
+    this.collapsed = !this.collapsed;
+  }
 }

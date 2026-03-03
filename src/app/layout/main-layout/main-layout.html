@@ -1,1 +1,11 @@
-<p>main-layout works!</p>
+<app-header (toggleSidebar)="sidebar.toggle()"></app-header>
+
+<div class="layout-container">
+  <app-sidebar #sidebar></app-sidebar>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,10 @@
+.layout-container {
+  display: flex;
+  height: calc(100vh - 120px); // header + footer height
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
