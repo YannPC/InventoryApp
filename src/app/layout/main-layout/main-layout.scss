@@ -1,10 +1,27 @@
 .layout-container {
   display: flex;
+
   height: calc(100vh - 120px); // header + footer height
 }
 
 .content {
+  // flex: 1;
+  // padding: 1.5rem;
+  // overflow-y: auto;
+  display: flex;
+}
+.logo-container {
+  /* take remaining horizontal space next to sidebar */
   flex: 1;
-  padding: 1.5rem;
-  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-container .logo {
+  max-width: auto;
+  height: 100%;
+  /* prevent it from growing too large */
+  max-height: auto;
 }
