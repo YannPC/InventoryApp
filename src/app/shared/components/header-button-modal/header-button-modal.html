@@ -1,0 +1,21 @@
+<div class="overlay" *ngIf="visible">
+  <div class="modal">
+    <button class="close" (click)="close()">×</button>
+
+    <ng-container [ngSwitch]="mode">
+      <form *ngSwitchCase="'sign-in'" (ngSubmit)="onSubmit(signInForm.value)" #signInForm="ngForm">
+        <h2>Sign in</h2>
+        <!-- sign‑in fields -->
+      </form>
+
+      <form
+        *ngSwitchCase="'register'"
+        (ngSubmit)="onSubmit(registerForm.value)"
+        #registerForm="ngForm"
+      >
+        <h2>Register</h2>
+        <!-- registration fields -->
+      </form>
+    </ng-container>
+  </div>
+</div>
