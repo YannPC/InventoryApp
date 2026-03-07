@@ -6,6 +6,8 @@
     <p>Track products, manage inventory, and generate reports</p>
   </div>
 
-  <button class="header-btn">Sign In</button>
-  <button class="header-btn">Register</button>
+  <button (click)="modal.mode = 'sign-in'; modal.open()">Sign In</button>
+  <button (click)="modal.mode = 'register'; modal.open()">Register</button>
+
+  <app-header-button-modal #modal></app-header-button-modal>
 </header>
