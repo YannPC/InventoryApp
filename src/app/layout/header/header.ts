@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { HeaderButtonModal } from '../../shared/components/header-button-modal/header-button-modal';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [HeaderButtonModal],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
