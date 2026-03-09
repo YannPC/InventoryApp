@@ -38,12 +38,12 @@ export class HeaderButtonModal {
   close() {
     this.visible = false;
   }
-  onSubmit(formValues: any) {
-    if (this.mode === 'sign-in') {
-      // call authService.signIn(...)
-    } else {
-      // call authService.register(...)
-    }
-    this.close();
-  }
+  // onSubmit(formValues: any) {
+  //   if (this.mode === 'sign-in') {
+  //     // call authService.signIn(...)
+  //   } else {
+  //     // call authService.register(...)
+  //   }
+  //   this.close();
+  // }
 }
