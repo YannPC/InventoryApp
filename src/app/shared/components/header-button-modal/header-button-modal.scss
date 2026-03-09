@@ -14,10 +14,10 @@
 .modal {
   background: rgb(85, 84, 84);
   padding: 10px;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 90%;
-  max-height: 70vh;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 80%;
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
 }
@@ -58,7 +58,7 @@ mat-card {
 }
 mat-form-field,
 mat-checkbox {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: auto;
   margin-bottom: 50px;
